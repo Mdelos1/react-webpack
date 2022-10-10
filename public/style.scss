@@ -9,7 +9,7 @@ $font-size-body: 15px;
     box-sizing: border-box;
 }
 body {
-    background-color: rgb(66, 22, 22);
+    
 }
 .imgHero{
     position: relative;
@@ -38,4 +38,47 @@ body {
       list-style: none;
       gap: 20%;
     }
+}
+.top-main{
+    background-color: #fff;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 920px;
+    left: 650px;
+    gap: 40px;
+}
+.top-main span{
+    color: rgb(127, 127, 127);
+    margin-left: 80px;
+}
+.main-button{
+    display: flex;
+    margin-left: 100px;
+    margin-bottom: 80px;
+    gap: 600px;
+}
+.imgMain{
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+.images_main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 100px;
+}
+h1{
+    margin-top: 88px;
+    margin-left: 80px;
+    font-weight: 10;
+    font-size: 40px;
+    justify-content: center;
+}
+.main-button span{
+    font-weight: 10;
+    font-size: 28px;
 }

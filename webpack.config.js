@@ -1,13 +1,11 @@
 const path = require("path");
+
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode: "development",
   entry: "/src/index.js", // main js
-  devServer: {
-    port: 5050,
-  },
   output: {
     path: path.resolve(__dirname, "build"), // output folder
     publicPath: "/",
@@ -35,14 +33,22 @@ module.exports = {
         test: /\.scss$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
+      {
+        test: /\.(png|gif|jpg|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            
+          }
+        ],
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./public/index.html", // base html
-    }),
-    new MiniCssExtractPlugin({
-      filename: "css/app.bundle.css",
+    }),new MiniCssExtractPlugin({
+      filename: "css/app.bundle.css", // base html
     }),
   ],
 };

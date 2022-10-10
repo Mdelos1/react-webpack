@@ -33,7 +33,7 @@ class App extends Component {
             </span>
           </div>
           <div className="main-button">
-            <span>OUR CREATIONS</span>
+            <h2>OUR CREATIONS</h2>
             <button>SEE ALL</button>
           </div>
           <div className="images_main">
@@ -46,7 +46,14 @@ class App extends Component {
             <img src={imgMain7} className="imgMain7" />
             <img src={imgMain8} className="imgMain8" />
           </div>
-          <span>DEEP EARTH</span>
+          <h3 className="img_title1">DEEP EARTH</h3>
+          <h3 className="img_title2">NIGHT ARCADE</h3>
+          <h3 className="img_title3">SOCCER TEAM VR</h3>
+          <h3 className="img_title4">THE GRID</h3>
+          <h3 className="img_title5">FROM UP ABOVE VR</h3>
+          <h3 className="img_title6">POCKET BOREALIS</h3>
+          <h3 className="img_title7">THE CURIOSITY</h3>
+          <h3 className="img_title8">MAKE IT FISHEYE</h3>
         </section>
       </header>
     );

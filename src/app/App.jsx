@@ -17,7 +17,7 @@ class App extends Component {
                 <section>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolorum inventore cum a voluptate. Dolorem tenetur, natus dolorum hic ratione adipisci cumque veritatis molestias nulla voluptatibus, quaerat placeat architecto quae.</p>
                 </section>
-                <Form />
+                
                 <Counter />
             </main>
         )

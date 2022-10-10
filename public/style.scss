@@ -39,3 +39,71 @@ body {
       gap: 20%;
     }
 }
+.footer {
+    background-color: black;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    padding: 40px 140px;
+    justify-content: space-between;
+    
+    &__logo {
+        width: 150px;
+        height: 25px;
+    }
+    &__icons {
+        display: flex;
+        gap: 20px;
+    }
+    &__img {
+        width: 22px;
+        height: 22px;
+        cursor: pointer;
+    }
+    &__section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__nav {
+      display: flex;
+      list-style: none;
+      font-family: 'Alata', sans-serif;
+      color: #fff;
+      gap: 30px;
+      cursor: pointer;
+    }
+   
+    &__text {
+        font-family: 'Alata', sans-serif;
+        font-size: $font-size-body;
+        color: rgb(107, 107, 107);
+        font-weight: 500;
+    }
+    &__finalSection {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        width: 100%;
+        align-items: center;
+        padding: 20px 10px;
+
+        &__section {
+            gap: 10px;
+        }
+        &__nav {
+            display: flex;
+            flex-direction: column;
+        }
+        &__finalSection {
+            align-items: center;
+        }
+    }
+}

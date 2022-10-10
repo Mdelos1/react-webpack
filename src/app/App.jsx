@@ -1,27 +1,28 @@
-import React, { Component } from 'react';
-import Counter from './counter/Counter.jsx';
-import Form from './form/Form.jsx';
-import Test from './Test.jsx';
+import React,{ Component} from 'react';
+import Header from './Header.jsx';
+import logo from './images/logo.svg'
+import imgHero from './images/desktop/image-hero.jpg'
 
-class App extends Component {
-
-    componentDidMount(){
-        console.log('Estoy iniciando');
-    }
-
+class App extends Component{
     render(){
-        return (
-            <main>
-                <Test />
-                <h1>Hola Mundo</h1>
-                <section>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolorum inventore cum a voluptate. Dolorem tenetur, natus dolorum hic ratione adipisci cumque veritatis molestias nulla voluptatibus, quaerat placeat architecto quae.</p>
-                </section>
-                <Form />
-                <Counter />
-            </main>
+        return(
+        
+        <header>
+        <Header />
+        <img src={logo} 
+            className='logo'
+        />
+        <img src={imgHero} 
+            className='imgHero'
+        />
+
+            <h1>Hola Mund</h1>
+            <section>
+                <p>Lorem</p>
+            </section>
+            </header>
+            
         )
     }
 }
-
 export default App;

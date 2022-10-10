@@ -1,29 +1,13 @@
-import React, { Component } from 'react';
-import Input from './Input.jsx';
-
-class Form extends Component {
-
-    listInputs = [
-        "Nombre", "Apellido", "Telefono", "Direccion"
-    ]
-
-    handleSubmit(e) {
-        e.preventDefault();
-        console.log('0Enviando')
-    }
-
-    render() {
-        return (
-            <form onSubmit={this.handleSubmit}>
-                {
-                    this.listInputs.map((element, index) => (
-                        <Input key={index} label={element} />
-                    ))
-                }
-                <button type='submit'>Guardar</button>
-            </form>
-        )
-    }
-}
-
-export default Form;
+import React,{Component} from "react";
+import input from './Input';
+class Form extends Component{
+    render(){
+       return(
+        <form>
+            <label>Nombre
+            <input type="text"placeholder="Escriba su nombre"/>
+<input />
+            </label>
+        </form>
+    )}}
+    export default Test;

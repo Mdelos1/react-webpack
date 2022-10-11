@@ -35,17 +35,47 @@ import Footer from './Footer.jsx';
 
 class App extends Component{
     render(){
+      document.addEventListener('click',({target}) => {
+        if (target.classList.contains('burger')) {
+            console.log('olas')
+            let contanerHover  = document.getElementById("cont__hover__burger");
+            contanerHover.classList.toggle('hidden')
+            let burger  = document.getElementById("burger");
+            burger.classList.add('hidden');
+
+            let closeB  = document.getElementById("closeB");
+            closeB.classList.remove('hidden');
+
+            let burgerlist  = document.getElementById("burgerlist");
+            burgerlist.classList.remove('hidden')
+            
+        }if (target.classList.contains('closeB')) {
+          let burgerlist  = document.getElementById("burgerlist");
+          burgerlist.classList.add('hidden')
+
+              let contanerHover  = document.getElementById("cont__hover__burger");
+              contanerHover.classList.add('hidden');
+
+              let burger  = document.getElementById("burger");
+              burger.classList.remove('hidden');
+
+              let closeB  = document.getElementById("closeB");
+              closeB.classList.add('hidden')
+            }
+        })
+    
         return(
 
         <body>
         <header>
-        <div className='header__background'></div>
+        <div className='header__background' id='header__background'></div>
 
         
     
     
 
         <Header />
+        <div className='cont__hover__burger hidden' id='cont__hover__burger'></div>
         <img src={imgHeroMobil} 
             className='imgHeroMobil'
         />
@@ -76,37 +106,56 @@ class App extends Component{
             <button> <b> SEE ALL </b></button>
           </div>
           <div className="images_main">
-          <div className="cont__img" >
+          <div className="cont__hover" >
+          <div className="cont__img" ></div>
           
             <img src={imgMain1} className="imgMain1" />
             <img src={imgMain1M} className="imgMain1M" />
             <h3 className="img_title1">DEEP EARTH</h3></div>
-            <div className="cont__img" >
+            
+            <div className="cont__hover" >
+            <div className="cont__img" ></div>
           
             <img src={imgMain2} className="imgMain1" />
             <img src={imgMain2M} className="imgMain1M" />
             <h3 className="img_title1">NIGHT ARCADE </h3></div>
-            <div className="cont__img" >
+
+            <div className="cont__hover" >
+            <div className="cont__img" ></div>
           
           <img src={imgMain3} className="imgMain1" />
           <img src={imgMain3M} className="imgMain1M" />
-          <h3 className="img_title1">SOCCER TEAM VR</h3></div><div className="cont__img" >
+          <h3 className="img_title1">SOCCER TEAM VR</h3></div>
+          <div className="cont__hover" >
+          <div className="cont__img" ></div>
           
           <img src={imgMain4} className="imgMain1" />
           <img src={imgMain4M} className="imgMain1M" />
-          <h3 className="img_title1">THE GRID</h3></div><div className="cont__img" >
+          <h3 className="img_title1">THE GRID</h3></div>
+          <div className="cont__hover" >
+          <div className="cont__img" ></div>
           
           <img src={imgMain5} className="imgMain1" />
           <img src={imgMain5M} className="imgMain1M" />
-          <h3 className="img_title1">FROM UP ABOVE VR</h3></div><div className="cont__img" >
+          <h3 className="img_title1">FROM UP ABOVE VR</h3></div>
+          <div className="cont__hover" >
+          <div className="cont__img" ></div>
           
           <img src={imgMain6} className="imgMain1" />
           <img src={imgMain6M} className="imgMain1M" />
-          <h3 className="img_title1">POCKET BOREALIS</h3></div><div className="cont__img" >
+          <h3 className="img_title1">POCKET BOREALIS</h3></div>
+          
+          
+          <div className="cont__hover" >
+          <div className="cont__img" ></div>
+        
           
           <img src={imgMain7} className="imgMain1" />
           <img src={imgMain7M} className="imgMain1M" />
-          <h3 className="img_title1">THE CURIOSITY</h3></div><div className="cont__img" >
+          <h3 className="img_title1">THE CURIOSITY</h3></div>
+
+          <div className="cont__hover" >
+          <div className="cont__img" ></div>
           
           <img src={imgMain8} className="imgMain1" />
           <img src={imgMain8M} className="imgMain1M" />

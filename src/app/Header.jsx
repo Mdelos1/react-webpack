@@ -15,7 +15,7 @@ class Header extends Component{
         <nav className="header"><ul className="header__nav" >
              {
                     this.listOptions.map((element, index) => (
-                       <div className="header__border"> <li  id > {element} </li>
+                       <div className="header__border"> <li  className="header__list"> {element} </li>
                      </div> 
                     ) )
                 }
